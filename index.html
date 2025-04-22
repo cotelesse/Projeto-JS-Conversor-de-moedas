@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./primeiroProjetoJS.css">
+    <title>Conversor de Moeda</title>
+</head>
+
+<body>
+    <img Class="logo" src="./assets/logo 1.png" alt="logo-convert-money">
+
+    <main id="main">
+
+        <label>Converter <b>de</b>
+            <select>
+                <option>R$ Real Brasileiro</option>
+            </select>
+        </label>
+
+        <label>Converter para
+            <select class="select">
+                <option value="dolar">US$ Dolar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+            </select>
+        </label>
+
+        <label>Valor
+            <input onkeypress="digiteiNoInput()" placeholder="Valor a digitar">
+        </label>
+        <button onclick="converterValor()">Converter</button>
+
+        <section>
+            <div id="second">
+                <img class="img2" src="./assets/brasil 2.png" alt="bandeiraDoBrasil">
+                <h6 class="text2">Real</h6>
+                <p class="valorParaConverter">R$ 0,00</p>
+            </div>
+
+            <img class="img3" src="./assets/Vector.png" alt="seta">
+            <br>
+
+            <div id="third">
+                <img class="img4" src="./assets/estados-unidos (1) 1.png" alt="bandeiraDoEUA">
+                <h6 class="text3" id="troca">Dólar Americano</h6>
+                <p class="valorConvertido">US$ 0,00</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+<script src="./primeiroProjetoJS.js"></script>
+
+</html>
